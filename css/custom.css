@@ -65,7 +65,7 @@ nav li a {
     display: flex;
     justify-content: center;
     align-items: center;
-	background: linear-gradient(rgba(85, 85, 85, 0.75), rgba(85, 85, 85, 0.75)), url("/img/hero.jpg");
+	background: linear-gradient(rgba(85, 85, 85, 0.75), rgba(85, 85, 85, 0.75)), url("../img/hero.jpg");
     background-size: cover;
     background-attachment: fixed;
 	height: calc(100vh - 50px);
