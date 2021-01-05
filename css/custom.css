@@ -281,6 +281,10 @@ footer p {
 }
 
 @media(max-width: 600px) {
+	#home-text p {
+		font-size: 1.5rem;
+		width: 90%;
+	}
     .proj-container, .about-wrapper {
 		display: block;
 	}
