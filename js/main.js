@@ -1,3 +1,27 @@
+// slide-out menu
+
+const menuIcon = document.getElementById("menu-icon");
+const slideoutMenu = document.getElementById("slideout-menu");
+const slideoutMenuLinks = document.getElementById("slideout-menu-links");
+
+function toggleSlideMenu() {
+	if (slideoutMenu.style.opacity == "1") {
+		slideoutMenu.style.top = '-250px';
+		setTimeout(function () {
+			slideoutMenu.style.opacity = '0';
+			slideoutMenu.style.pointerEvents = 'none';
+		}, 400);
+
+	} else {
+		slideoutMenu.style.opacity = '1';
+		slideoutMenu.style.pointerEvents = 'auto';
+		slideoutMenu.style.top = '0px';
+	}
+}
+menuIcon.addEventListener('click', function () { toggleSlideMenu() });
+slideoutMenuLinks.addEventListener('click', function () { toggleSlideMenu() });
+
+// Typing Effect
 var TxtType = function (el, toRotate, period) {
 	this.toRotate = toRotate;
 	this.el = el;

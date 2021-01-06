@@ -1,7 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans&display=swap');
 
-h1, h2, h3, h4, nav {
+h1, h2, h3, h4, nav, .slideout-menu {
 	font-family: 'Work Sans', sans-serif;
 	color: #444444;
 }
@@ -23,10 +23,12 @@ html {
 }
 
 nav {
+	position: fixed;
 	background-color: #000044;
 	overflow: hidden;
-	height: 82px;
+	height: 72px;
 	width: 100%;
+	z-index: 100;
 }
 
 .nav-container {
@@ -61,14 +63,45 @@ nav li a {
 	align-items: center;
 }
 
+/* Slideout Menu */
+
+.slideout-menu {
+	display: none;
+    background-color: rgba(175, 175, 175, 0.9);
+    z-index: 100;
+    position: fixed;
+    transition: 0.7s;
+    transition-timing-function: ease-in-out;
+    margin-top: 72px;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+	top: -250px;
+}
+
+.slideout-menu ul {
+    list-style: none;
+    padding: 0px 32px;
+}
+
+.slideout-menu ul li {
+    padding: 8px;
+}
+
+.slideout-menu a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
 #home {
     display: flex;
     justify-content: center;
-    align-items: center;
+	align-items: center;
 	background: linear-gradient(rgba(85, 85, 85, 0.75), rgba(85, 85, 85, 0.75)), url("../img/hero.jpg");
     background-size: cover;
     background-attachment: fixed;
-	height: calc(100vh - 50px);
+	height: calc(100vh);
     text-align: center;
 }
 #home-text button {
@@ -149,12 +182,6 @@ nav li a {
 	text-align: center;
 	font-size: 1.5rem;
 }
-
-/* .proj-card p {
-	margin: 0 auto;
-	width: 90%;
-	margin-top: 10px;
-} */
 
 .proj-desc {
 	
@@ -269,6 +296,10 @@ footer p {
 	nav ul {
 		display: none;
 	}
+
+	.slideout-menu {
+        display: block;
+    }
 
 	.menu-icon {
 		display: flex;
