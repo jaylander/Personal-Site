@@ -1,18 +1,19 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans&display=swap');
 
-h1, h2, h3, h4, nav, .slideout-menu {
+h1, h2, h3, h4, nav, a, .slideout-menu {
 	font-family: 'Work Sans', sans-serif;
 	color: #444444;
 }
 
-p, button, input, textarea, footer{
+p, button, input, textarea, ul, footer{
 	font-family: 'Open Sans', sans-serif;
 	color: #444444;
 }
 
 html {
 	scroll-behavior: smooth;
+	scroll-padding-top: 72px;
 }
 
 .main-container {
@@ -34,6 +35,22 @@ nav {
 .nav-container {
 	display: flex;
 	height: 100%;
+}
+
+.external-links {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	height: 100%;
+	right: 0;
+}
+
+.external-links a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	padding-left: 20px;
 }
 
 nav ul {
@@ -76,7 +93,7 @@ nav li a {
     width: 100%;
     text-align: center;
     pointer-events: none;
-	top: -250px;
+	top: -300px;
 }
 
 .slideout-menu ul {
@@ -96,7 +113,7 @@ nav li a {
 
 
 /* hero/home section */
-#home {
+.home {
     display: flex;
     justify-content: center;
 	align-items: center;
@@ -106,10 +123,10 @@ nav li a {
 	height: calc(100vh);
     text-align: center;
 }
-#home-text button {
+.home-text button {
     margin-top: 25px;
 }
-#home-text p {
+.home-text p {
 	width: 75%;
 	color: #fff;
     font-size: 2.5rem;
@@ -117,9 +134,9 @@ nav li a {
 	text-align: center;
 }
 
-#about {
+.about {
 	text-align: center;
-	margin: auto 0;
+	margin: 0 auto;
 }
 
 .about-wrapper {
@@ -127,31 +144,31 @@ nav li a {
 	grid-template-columns: auto auto;
 }
 
-#about #about-me-left {
+.about-me-left {
 	display: block;
 }
 
-#about-me-left p {
+.about-me-left p {
 	margin: 40px auto;
 	width: 75%;
 }
 
-#about .me-img {
+.me-img {
 	margin-top: 20px;
 	max-height: 250px;
 	border-radius: 50%;
 }
 
-#skills img {	
+.skills img {	
 	height: 90%;
 }
 
-#skills ul {
+.skills ul {
     list-style-type: none;
     padding: 0;
 }
 
-#skills ul li {
+.skills ul li {
 	display: inline-block;
 	width: 160px;
 	height: 160px;
@@ -162,14 +179,12 @@ nav li a {
 	margin: 0;
 	padding: 20px;
 }
-#projects {
-	width: 100%;
-}
+
 .filler {
 	margin: -72px auto 0px auto;
 	padding-top: 72px;
 }
-.section-container {
+.projects-section {
 	width: 100%;
 	background-color:#f2f2f2;
 	padding-bottom: 25px;
@@ -219,6 +234,11 @@ nav li a {
 	margin: 20px auto;
 	text-align: left;
 	width: 80%;
+	padding: 0;
+}
+
+.proj-desc h3 {
+	font-size: 1.2rem;
 }
 
 .tech-stack {
@@ -296,25 +316,6 @@ footer p {
 	font-size: 0.9rem;
 }
 
-.modal-view {
-	position: fixed;
-	display: flex;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
-	background-color: #fff;
-	width: 90%;
-	height: 90%;
-	margin: auto;
-	padding: 20px;
-}
-
 @media(max-width: 900px) {
     .proj-container {
 		grid-template-columns: auto auto;
@@ -332,14 +333,10 @@ footer p {
 		display: flex;
 		margin: auto 0 auto auto;
 	}
-/* 
-	.proj-img {
-		width: 50%;
-	} */
 }
 
 @media(max-width: 700px) {
-	#home-text p {
+	.home-text p {
 		font-size: 1.5rem;
 		width: 90%;
 	}
@@ -359,16 +356,12 @@ footer p {
 		width: 90%;
 	}
 
-	/* .proj-card h3 {
-		width: 100%;
-	} */
-	
-	#skills ul {
+	.skills ul {
 		list-style-type: none;
 		padding: 0;
 	}
 	
-	#skills ul li {
+	.skills ul li {
 		display: inline-block;
 		width: 72px;
 		height: 72px;

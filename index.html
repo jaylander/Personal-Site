@@ -29,6 +29,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+
             </ul>
         </div>
         <nav>
@@ -39,15 +40,20 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="external-links">
+                    <a
+                        href="https://docs.google.com/document/d/1oYjatx6Theb561_V25p1_Jj2_k0aTZWWbpdgwVvMgQw/edit?usp=sharing">Resume</a>
+                    <a href="htts://github.com/jaylander"><i class="fab fa-github"></i> GitHub</a>
+                </div>
                 <div class="menu-icon" id="menu-icon">
                     <i class="fas fa-bars"></i>
                 </div>
             </div>
         </nav>
     </header>
-    <div id="home">
-        <div id="home-text" class="main-container">
-            <p>I am Jay Lander. I am a Front-End Developer based out of DFW, Texas.</p>
+    <div id="home" class="home">
+        <div class="home-text" class="main-container">
+            <p>I am Jay Lander. I am a Front-End Web Developer based out of DFW(Plano), Texas.</p>
             <p>I enjoy</p>
             <p href="" class="typewrite" data-period="2000"
                 data-type='[ "Building Cool Stuff.", "Learning New Things.", "Weight Training." ]'>
@@ -56,121 +62,112 @@
         </div>
 
     </div>
-    <div id="about">
-        <div class="filler">
-            <div class="main-container">
-                <h1 class="section-heading">About Me</h1>
-                <div class="about-wrapper">
-                    <div id="about-me-left">
-                        <h2>WHOIS Jay Lander?</h2>
-                        <img class="me-img" src="img/me.jpeg">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, non repellendus
-                            consectetur,
-                            architecto sit iure beatae magni expedita illo nam voluptate eius perspiciatis incidunt
-                            maxime praesentium deleniti cumque ad nisi.Nobis amet atque soluta voluptatibus sapiente
-                            consectetur sit cupiditate provident! Quod in natus dolores non dignissimos voluptatum
-                            numquam nihil? Est nesciunt, ducimus voluptates omnis illo rerum voluptatum fuga vel quas.
-                        </p>
-                    </div>
-                    <div id="skills">
-                        <h2>Skills</h2>
-                        <ul>
-                            <li><img src="img/html5.svg" alt="HTML5" srcset=""></li>
-                            <li><img src="img/css-5.svg" alt="CSS3" srcset=""></li>
-                            <li><img src="img/javascript.svg" alt="Javascript" srcset=""></li>
-                        </ul>
-                    </div>
-                </div>
+    <div id="about" class="main-container about">
+        <h1 class="section-heading">About Me</h1>
+        <div class="about-wrapper">
+            <div class="about-me-left">
+                <h2>WHOIS Jay Lander?</h2>
+                <img class="me-img" src="img/me.jpeg">
+                <p>
+                    15+ years in customer service in the transision of a career change to IT. Focusing on
+                    front-end web developement and full stack deveoplment later in my career. I love solving
+                    problems.
+                </p>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><img src="img/html5.svg" alt="HTML5" srcset=""></li>
+                    <li><img src="img/css-5.svg" alt="CSS3" srcset=""></li>
+                    <li><img src="img/javascript.svg" alt="Javascript" srcset=""></li>
+                </ul>
             </div>
         </div>
     </div>
     <div id="projects" class="projects-section">
-        <div class="filler">
-            <div class="section-container">
-                <div class="main-container">
-                    <h1 class="section-heading">Projects</h1>
-                    <div class="proj-card odd">
-                        <div class="proj-info">
-                            <div class="proj-heading">
-                                <h3>Loan Calculator</h3>
-                                <div class="proj-button-group">
-                                    <a href="#"><button class="button">See It</button></a>
-                                    <a href="#"><button class="button"><i class="fab fa-github"></i> GitHub</button></a>
-                                </div>
-                            </div>
-                            <p class="proj-desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, non repellendus
-                                consectetur,
-                                architecto sit iure beatae magni expedita illo nam voluptate eius perspiciatis incidunt
-                                maxime praesentium deleniti cumque ad nisi.Nobis amet atque soluta voluptatibus sapiente
-                                consectetur sit cupiditate provident! Quod in natus dolores non dignissimos voluptatum
-                                numquam nihil? Est nesciunt, ducimus voluptates omnis illo rerum voluptatum fuga vel
-                                quas.
-                            </p>
-                        </div>
-                        <div class="proj-caption">
-                            <img class="proj-img odd" src="img/pngkit_about-us-png-images_2569815.png" alt="" srcset="">
-                            <p class="tech-stack">
-                                HTML - Bootstrap 4.5.x - JavaScript - Animate.css
-                            </p>
+        <div class="main-container">
+            <h1 class="section-heading">Projects</h1>
+            <div class="proj-card odd">
+                <div class="proj-info">
+                    <div class="proj-heading">
+                        <h3>Loan Calculator</h3>
+                        <div class="proj-button-group">
+                            <a href="#"><button class="button">See It</button></a>
+                            <a href="#"><button class="button"><i class="fab fa-github"></i> GitHub</button></a>
                         </div>
                     </div>
-                    <div class="proj-card">
-                        <div class="proj-info">
-                            <div class="proj-heading">
-                                <h3>Tip to Toe Nails</h3>
-                                <div class="proj-button-group">
-                                    <a href="http://www.tiptotoenails.com/">
-                                        <button class="button">See It</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <p class="proj-desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, non repellendus
-                                consectetur,
-                                architecto sit iure beatae magni expedita illo nam voluptate eius perspiciatis incidunt
-                                maxime praesentium deleniti cumque ad nisi.Nobis amet atque soluta voluptatibus sapiente
-                                consectetur sit cupiditate provident! Quod in natus dolores non dignissimos voluptatum
-                                numquam nihil? Est nesciunt, ducimus voluptates omnis illo rerum voluptatum fuga vel
-                                quas.
-                            </p>
-                        </div>
-                        <div class="proj-caption">
-                            <img class="proj-img odd" src="img/pngkit_about-us-png-images_2569815.png" alt="" srcset="">
-                            <p class="tech-stack">
-                                HTML- CSS - WordPress - JavaScript - AOS (Animate On Scroll Library)
-                            </p>
+                    <div class="proj-desc">
+                        <p>
+                            A single page website that the user enters loan amount, interest rate, and loan length
+                            in
+                            years. Calculates the monthly payments along with total interest, total loan cost, and
+                            an
+                            amortization schedule table.
+                        </p>
+                        <h3 class="proj-heading">What I Learned</h3>
+                        <ul>
+                            <li>
+                                How to apply Bootstrap elements to the UI and make it repsonsive for mobile browsers
+                            </li>
+                            <li>
+                                Using a CSS library to animate the table when user calcuates or resets the loan
+                                calcuator
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="proj-caption">
+                    <img class="proj-img odd" src="img/pngkit_about-us-png-images_2569815.png" alt="" srcset="">
+                    <p class="tech-stack">
+                        HTML - Bootstrap 4.5.x - JavaScript - Animate.css
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="proj-card">
+                <div class="proj-info">
+                    <div class="proj-heading">
+                        <h3>Tip to Toe Nails</h3>
+                        <div class="proj-button-group">
+                            <a href="http://www.tiptotoenails.com/">
+                                <button class="button">See It</button>
+                            </a>
                         </div>
                     </div>
+                    <div class="proj-desc">
+                        <p>
+                            Custom theme applied to a WordPress site for a local nail and spa salon.
+                        </p>
+                        <h3 class="proj-heading">What I Learned</h3>
+                        <ul>
+                            <li>
+                                How to apply a custom theme to WordPress that is repsonsive
+                            </li>
+                            <li>
+                                Using a CSS library to animate on scroll for the links
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="proj-caption">
+                    <img class="proj-img odd" src="img/pngkit_about-us-png-images_2569815.png" alt="" srcset="">
+                    <p class="tech-stack">
+                        HTML- CSS - WordPress - JavaScript - AOS (Animate On Scroll Library)
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <div id="contact">
-        <div class="filler">
-            <div class="main-container">
-                <h1 class="section-heading">Contact Me</h1>
-                <form action="" method="post">
-                    <input type="text" name="" id="" placeholder="Name">
-                    <input type="text" name="" id="" placeholder="E-Mail">
-                    <textarea name="" id="" rows="10" placeholder="Your Message"></textarea>
-                    <button>Submit</button>
-                </form>
-            </div>
-        </div>
+    <div id="contact" class="contact main-container">
+        <h1 class="section-heading">Contact Me</h1>
+        <form action="https://formspree.io/f/xaylabke" method="post">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="_replyto" placeholder="E-Mail">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" rows="10" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
-
-    <!-- Modal View -->
-    <!-- <div class="modal-view">
-        <div class="modal-content main-container">
-            <div class="project-slideshow">
-                Insert Project Screenshots
-            </div>
-            <h1>Tip to Toe Nails</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo nobis consequuntur facilis veniam praesentium nihil eaque exercitationem suscipit. Provident eos minima alias repellendus accusantium aut deleniti numquam atque doloremque excepturi!Dolores quos libero provident modi eaque eveniet omnis excepturi nostrum similique! Placeat est magni id molestiae labore omnis sed repellat iusto laboriosam sunt porro officiis, sapiente unde minus quos? Consequuntur?</p>
-        </div>
-    </div> -->
 
     <footer>
         <p>&#169; Jay Lander 2021. All Rights Reserved.</p>

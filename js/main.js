@@ -6,7 +6,7 @@ const slideoutMenuLinks = document.getElementById("slideout-menu-links");
 
 function toggleSlideMenu() {
 	if (slideoutMenu.style.opacity == "1") {
-		slideoutMenu.style.top = '-250px';
+		slideoutMenu.style.top = '-300px';
 		setTimeout(function () {
 			slideoutMenu.style.opacity = '0';
 			slideoutMenu.style.pointerEvents = 'none';
