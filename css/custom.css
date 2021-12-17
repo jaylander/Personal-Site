@@ -1,8 +1,20 @@
+.banner-section .simplebar-content-wrapper:before {
+    opacity: 0.7 !important;
+}
+
+.btn-cta {
+    border-color: #FFD750 !important;
+    color: #FFD750;
+}
+
+.btn-cta:after {
+    background-color: #FFD750;
+}
 
 .skills img {
-	height: 100px;
-	width: 100px;
-	margin-bottom: 10px;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
 }
 
 .skills .skills-item h4 {
@@ -18,4 +30,8 @@
 
 .header-main .nav-footer .copy p {
     color: #383838;
+}
+
+.ajax-portfolio-popup .single-work .information li {
+    display: block;
 }
