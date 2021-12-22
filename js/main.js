@@ -29,7 +29,9 @@ $(window).on('load', function() {
     if( $('.portfolio-items').length ) {
         var $elements = $(".portfolio-items"),
             $filters = $('.portfolio-filter ul li');
-        $elements.isotope();
+        $elements.isotope({
+            layoutMode: 'fitRows'
+        });
 
         $filters.on('click', function(){
             $filters.removeClass('active');
